@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-neutral-100: oklch(0.9698 0.0054 95.1);
+  --color-neutral-300: oklch(0.9195 0.0076 164.93);
+  --color-neutral-800: oklch(0.4342 0.038 180.97);
+  --color-neutral-900: oklch(0.32 0.0429 181);
+  --color-orange-500: oklch(0.7885 0.132 48.75);
+  --font-display: var(--font-nunito);
+  --font-sans: var(--font-nunito-sans);
+  --text-lg--line-height: 1.5;
+  --tracking-normal: -0.3px;
+}
