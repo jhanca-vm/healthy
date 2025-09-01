@@ -19,7 +19,7 @@ export default function CallToAction() {
             'sm:text-4xl'
           )}
         >
-          ¿Listo para cocinar de forma más inteligente?
+          ¿Listo para cocinar más sano?
         </h2>
         <p
           className={clsx(
@@ -27,8 +27,7 @@ export default function CallToAction() {
             'sm:mb-10'
           )}
         >
-          Haz clic en el botón, elige una receta y sirve la cena en la mesa...
-          rápido.
+          Haz clic en el botón, elige una receta y sirve en la mesa.
         </p>
         <Link
           className={clsx(
@@ -52,8 +51,8 @@ export default function CallToAction() {
       />
       <Image
         className={clsx(
-          'absolute -bottom-14 -left-12 w-45 hidden sm:block xl:-bottom-16',
-          'xl:-left-16 xl:w-64'
+          'absolute -bottom-14 -left-12 w-45 hidden sm:block xl:-bottom-5',
+          'xl:-left-18 xl:w-78.5'
         )}
         src={fork}
         alt=""
