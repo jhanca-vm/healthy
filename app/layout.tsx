@@ -3,8 +3,8 @@ import { Nunito, Nunito_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { PropsWithChildren } from 'react'
+import Menu from './_components/menu'
 import logo from './logo.webp'
-import Menu from './menu'
 import './style.css'
 
 const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito' })
@@ -33,7 +33,12 @@ export default function RootLayout({ children }: PropsWithChildren) {
             <Menu />
           </nav>
         </header>
-        <main>{children}</main>
+        <main className="px-4 sm:px-8">
+          <div className="mx-auto max-w-298">{children}</div>
+        </main>
+        <footer className="py-10 font-medium text-center text-neutral-900">
+          © 2025 Jhan Viloria
+        </footer>
       </body>
     </html>
   )
