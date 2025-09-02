@@ -37,7 +37,15 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <div className="mx-auto max-w-298">{children}</div>
         </main>
         <footer className="py-10 font-medium text-center text-neutral-900">
-          © 2025 Jhan Viloria
+          © 2025{' '}
+          <a
+            className="hover:text-neutral-800"
+            href="https://jhanca.pages.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Jhan Viloria
+          </a>
         </footer>
       </body>
     </html>

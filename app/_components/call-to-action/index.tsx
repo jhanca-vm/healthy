@@ -33,7 +33,7 @@ export default function CallToAction() {
           className={clsx(
             'py-4 px-6 inline-block rounded-xl bg-neutral-900 font-display',
             'font-bold text-lg text-white transition-colors',
-            'hover:bg-neutral-800 sm:px-8 sm:text-xl sm:tracking-tighter'
+            'hover:bg-neutral-800 sm:px-8 sm:text-xl'
           )}
           href="/recetas"
         >
