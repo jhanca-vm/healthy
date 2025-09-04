@@ -1,5 +1,5 @@
 import clsx from 'clsx/lite'
-import ListItem from '@/_components/list-item'
+import ListItem from '@/app/_components/list-item'
 
 interface Props {
   title: string

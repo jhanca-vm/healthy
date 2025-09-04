@@ -17,7 +17,12 @@ const nunito_sans = Nunito_Sans({
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="es" className={clsx(nunito.variable, nunito_sans.variable)}>
-      <body className="bg-neutral-100 text-neutral-800 tracking-normal">
+      <body
+        className={clsx(
+          'min-h-dvh flex flex-col bg-neutral-100 text-neutral-800',
+          'tracking-normal'
+        )}
+      >
         <header
           className={'p-4 border-b border-neutral-300 sm:p-8 sm:pb-5 xl:pt-5'}
         >
@@ -33,8 +38,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
             <Menu />
           </nav>
         </header>
-        <main className="px-4 sm:px-8">
-          <div className="mx-auto max-w-298">{children}</div>
+        <main className="px-4 grow flex flex-col sm:px-8">
+          <div className="size-full max-w-298 mx-auto grow flex flex-col">
+            {children}
+          </div>
         </main>
         <footer className="py-10 font-medium text-center text-neutral-900">
           © 2025{' '}

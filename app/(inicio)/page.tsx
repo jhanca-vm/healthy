@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CallToAction from '@/_components/call-to-action'
+import CallToAction from '@/app/_components/call-to-action'
 import Features from './features'
 import Hero from './hero'
 import ValueProposition from './value-proposition'

@@ -4,7 +4,11 @@ import imageLg from './image-lg.webp'
 import imageSm from './image-sm.webp'
 import squiggle from './squiggle.svg'
 
-export default function Mission() {
+interface Props {
+  description: string
+}
+
+export default function Mission({ description }: Props) {
   return (
     <section
       className={clsx(
@@ -36,9 +40,7 @@ export default function Mission() {
           conveniente, asequible y realmente delicioso.
         </p>
         <p className="font-medium text-xl/normal tracking-tight">
-          Aquí ofrecemos platos rápidos y con ingredientes reales que cualquiera
-          puede preparar. No necesitas equipo sofisticado ni productos
-          ultraprocesados, solo ingredientes de verdad y pasos sencillos.
+          {description}
         </p>
       </div>
       <picture className="xl:flex-1">

@@ -2,7 +2,20 @@
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+Create a `.env` file in the root of the project and add these variables:
+
+```env
+TURSO_DATABASE_URL
+TURSO_AUTH_TOKEN
+```
+
+Run the development server:
 
 ```bash
 pnpm dev
